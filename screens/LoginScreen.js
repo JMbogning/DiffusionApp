@@ -38,7 +38,7 @@ const LoginScreen = ({navigation}) => {
 
             <FormButton 
                 buttonTitle="Connection"
-                onPress={() => alert('Connection reussie')}
+                onPress={() => navigation.navigate("SearchScreen")}
             />
 
             <TouchableOpacity style={styles.forgotButton} onPress={() => {}}>

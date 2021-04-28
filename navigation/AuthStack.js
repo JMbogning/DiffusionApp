@@ -6,6 +6,7 @@ import LoginScreen from '../screens/LoginScreen';
 import OnboardingScreen from '../screens/OnboardingScreen';
 
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import SearchScreen from '../screens/SearchScreen';
 
 
 
@@ -49,6 +50,13 @@ const AuthStack = () => {
           ),
         })}
       />
+
+      <Stack.Screen
+        name="SearchScreen"
+        component={SearchScreen}
+        options={{header: () => null}}
+      />
+
     </Stack.Navigator>
   );
 }
